@@ -46,9 +46,9 @@ async function configure() {
       deviceScaleFactor: 1,
     })
 
-    console.log('Going to app.parkalot.io...')
+    console.log('Going to https://tjx-eu.parkalot.io/#/client...')
 
-    await page.goto('https://app.parkalot.io/#/login', { waitUntil: 'networkidle2' })
+    await page.goto('https://tjx-eu.parkalot.io/#/client', { waitUntil: 'networkidle2' })
 
     console.log('Logging in...')
     await page.type('[type="email"]', config.username)
